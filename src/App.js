@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import Weather from "./Weather";
 import "./App.css";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="Weather App">
       <div className="container">
         <h1>Weather Application</h1>
-        <button ClassName="btn btn-primary">Hello</button>
+        <Weather />
         <footer>
           This project was coded by{" "}
           <a
