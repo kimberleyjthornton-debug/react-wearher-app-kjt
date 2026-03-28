@@ -1,3 +1,9 @@
-div {
-  color: red;
+.Weather {
+  border: solid 1px floralwhite;
+  border-radius: 2px;
+}
+
+.form-search-bar {
+  width: 60%;
+  margin: 4px;
 }
