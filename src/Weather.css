@@ -17,8 +17,9 @@ body {
 .form-search-bar {
   width: 70%;
   margin: 4px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
+  opacity: 0.8;
   color: rgba(42, 40, 40, 0.893);
   border: none;
   padding: 8px;
@@ -60,7 +61,7 @@ body {
   line-height: 19px;
 }
 
-.Weather .temperature {
+.WeatherTemperature .temperature {
   margin-top: 16px;
   margin-left: 2px;
   font-weight: bold;
@@ -69,7 +70,7 @@ body {
   font-weight: 400;
 }
 
-.Weather .unit {
+.WeatherTemperature .unit {
   font-size: 18px;
   padding: 2px;
   font-weight: 500;
