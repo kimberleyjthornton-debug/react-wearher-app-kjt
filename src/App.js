@@ -22,9 +22,16 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            open sourced
+            open sourced on GitHub
           </a>{" "}
-          on GitHub
+          and hosted on{" "}
+          <a
+            href="https://github.com/kimberleyjthornton-debug/react-wearher-app-kjt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Netlify
+          </a>{" "}
         </footer>
       </div>
     </div>
