@@ -16,7 +16,8 @@ export default function Weather() {
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
       pressure: response.data.temperature.pressure,
-      iconUrl: "https://openweathermap.org/payload/api/media/file/10d@2x.png",
+      iconUrl:
+        "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
     });
 
     executeCompleted(true);
@@ -46,7 +47,7 @@ export default function Weather() {
           </li>
           <li>{weatherData.description}</li>
         </ul>
-        <div className="row mt-3">
+        <div className="row">
           <div className="col-6">
             <div className="d-flex">
               <img
