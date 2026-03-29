@@ -3,7 +3,7 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
@@ -38,7 +38,7 @@ export default function Weather() {
             />
           </div>
         </form>
-        <h1>{weatherData.city}</h1>
+        <h1>{props.defaultCity}</h1>
         <ul>
           <li>
             <FormattedDate date={weatherData.date} />
@@ -70,9 +70,8 @@ export default function Weather() {
       </div>
     );
   } else {
-    let city = "London";
     const apiKey = "o3d03f027be48ad05b5ec0c715cadt7d";
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
