@@ -16,8 +16,7 @@ export default function Weather() {
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
       pressure: response.data.temperature.pressure,
-      iconUrl:
-        "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
+      iconUrl: "https://openweathermap.org/payload/api/media/file/10d@2x.png",
     });
 
     executeCompleted(true);
