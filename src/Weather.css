@@ -1,9 +1,79 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/703/original/pexels-r-khalil-250162-767991.jpg?1769540574");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #aabbbc;
+}
+
 .Weather {
-  border: solid 1px floralwhite;
+  background-color: #f5f9fd;
+  padding: 10px 0 20px 20px;
+  color: rgb(100, 100, 100);
   border-radius: 2px;
+  font-family: "League Spartan", sans-serif;
+  max-width: 600px;
 }
 
 .form-search-bar {
-  width: 60%;
+  width: 70%;
   margin: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(42, 40, 40, 0.893);
+  border: none;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 4px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+*:focus {
+  outline: none;
+}
+
+.search-form-button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #227dad;
+  color: white;
+}
+
+.Weather h1 {
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 40px;
+  margin: 8px 4px 0 4px;
+}
+
+.Weather ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px 2px 0 6px;
+}
+
+.Weather li {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 19px;
+}
+
+.Weather .temperature {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+}
+
+.Weather .unit {
+  font-size: 18px;
+  padding: 2px;
+  font-weight: 500;
+  opacity: 0.9;
+  position: relative;
+  top: 56px;
+  line-height: 1;
 }
