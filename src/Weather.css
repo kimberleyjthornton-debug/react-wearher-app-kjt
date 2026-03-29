@@ -62,6 +62,7 @@ body {
 }
 
 .WeatherTemperature .temperature {
+  color: black;
   margin-top: 16px;
   margin-left: 2px;
   font-weight: bold;
@@ -72,6 +73,7 @@ body {
 
 .WeatherTemperature .unit {
   font-size: 18px;
+  color: black;
   padding: 2px;
   font-weight: 500;
   opacity: 0.9;
