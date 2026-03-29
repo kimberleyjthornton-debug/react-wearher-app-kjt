@@ -4,12 +4,11 @@ import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather() {
-  let city = "Moscow";
-  const [completed, executeCompleted] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      ready: true,
       date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
@@ -18,12 +17,11 @@ export default function Weather() {
       pressure: response.data.temperature.pressure,
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
+      city: response.data.city,
     });
-
-    executeCompleted(true);
   }
 
-  if (completed) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <form>
@@ -40,7 +38,7 @@ export default function Weather() {
             />
           </div>
         </form>
-        <h1>{city}</h1>
+        <h1>{weatherData.city}</h1>
         <ul>
           <li>
             <FormattedDate date={weatherData.date} />
@@ -72,6 +70,7 @@ export default function Weather() {
       </div>
     );
   } else {
+    let city = "London";
     const apiKey = "o3d03f027be48ad05b5ec0c715cadt7d";
     const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
