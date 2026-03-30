@@ -3,6 +3,6 @@
   margin: 5px 5px 5px 40px;
 }
 
-.WeatherForecast .col-2 {
-  margin-left: 30px;
+.WeatherForecast .col {
+  margin-left: 10px;
 }
