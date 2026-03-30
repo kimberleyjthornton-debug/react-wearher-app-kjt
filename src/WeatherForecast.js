@@ -21,7 +21,7 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="WeatherForecast d-flex mt-4">
-        <div className="row">
+        <div className="row me-2">
           {forecast.slice(0, 5).map(function (dailyForecast, index) {
             return (
               <div className="col ms-1" key={index}>

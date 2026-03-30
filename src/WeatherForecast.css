@@ -1,8 +1,14 @@
 .WeatherForecast {
   text-align: center;
-  margin: 5px 5px 5px 40px;
+  font-size: 16px;
 }
 
 .WeatherForecast .col {
-  margin-left: 10px;
+  padding: 25px;
+}
+
+@media (max-width: 800px) {
+  .WeatherForecast .col:nth-child(5) {
+    display: none;
+  }
 }

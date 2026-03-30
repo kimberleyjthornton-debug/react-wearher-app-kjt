@@ -11,3 +11,12 @@
   padding-top: 20px;
   border-top: 1px solid #65b0de1d;
 }
+
+@media (max-width: 800px) {
+  .App footer {
+    font-size: 10px;
+  }
+  .App {
+    margin: 20px;
+  }
+}
